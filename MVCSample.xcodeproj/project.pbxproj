@@ -15,6 +15,11 @@
 		5551CA282B024AD400CC798B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5551CA262B024AD400CC798B /* LaunchScreen.storyboard */; };
 		5551CA302B025A4B00CC798B /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551CA2F2B025A4B00CC798B /* ViewPresenter.swift */; };
 		5551CA322B02757300CC798B /* LoadingOverLayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551CA312B02757300CC798B /* LoadingOverLayView.swift */; };
+		557D13052B0CE30100165BA5 /* GenericApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D13032B0CE30100165BA5 /* GenericApi.swift */; };
+		557D13062B0CE30100165BA5 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D13042B0CE30100165BA5 /* ApiError.swift */; };
+		557D13082B0CE90A00165BA5 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D13072B0CE90A00165BA5 /* Client.swift */; };
+		557D130B2B0CEA7900165BA5 /* BinOrgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D130A2B0CEA7900165BA5 /* BinOrgModel.swift */; };
+		557D130D2B0CEC4B00165BA5 /* BinOrgApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D130C2B0CEC4B00165BA5 /* BinOrgApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		5551CA292B024AD400CC798B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5551CA2F2B025A4B00CC798B /* ViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
 		5551CA312B02757300CC798B /* LoadingOverLayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverLayView.swift; sourceTree = "<group>"; };
+		557D13032B0CE30100165BA5 /* GenericApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericApi.swift; sourceTree = "<group>"; };
+		557D13042B0CE30100165BA5 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		557D13072B0CE90A00165BA5 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		557D130A2B0CEA7900165BA5 /* BinOrgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinOrgModel.swift; sourceTree = "<group>"; };
+		557D130C2B0CEC4B00165BA5 /* BinOrgApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinOrgApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 		5551CA1A2B024AD400CC798B /* MVCSample */ = {
 			isa = PBXGroup;
 			children = (
+				557D13092B0CE96E00165BA5 /* Model */,
+				557D13022B0CE30100165BA5 /* Network */,
 				5551CA1B2B024AD400CC798B /* AppDelegate.swift */,
 				5551CA1D2B024AD400CC798B /* SceneDelegate.swift */,
 				5551CA1F2B024AD400CC798B /* ViewController.swift */,
@@ -71,6 +83,25 @@
 				5551CA312B02757300CC798B /* LoadingOverLayView.swift */,
 			);
 			path = MVCSample;
+			sourceTree = "<group>";
+		};
+		557D13022B0CE30100165BA5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				557D13032B0CE30100165BA5 /* GenericApi.swift */,
+				557D13042B0CE30100165BA5 /* ApiError.swift */,
+				557D13072B0CE90A00165BA5 /* Client.swift */,
+				557D130C2B0CEC4B00165BA5 /* BinOrgApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		557D13092B0CE96E00165BA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				557D130A2B0CEA7900165BA5 /* BinOrgModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +177,13 @@
 			files = (
 				5551CA202B024AD400CC798B /* ViewController.swift in Sources */,
 				5551CA302B025A4B00CC798B /* ViewPresenter.swift in Sources */,
+				557D13052B0CE30100165BA5 /* GenericApi.swift in Sources */,
 				5551CA1C2B024AD400CC798B /* AppDelegate.swift in Sources */,
+				557D130B2B0CEA7900165BA5 /* BinOrgModel.swift in Sources */,
+				557D130D2B0CEC4B00165BA5 /* BinOrgApi.swift in Sources */,
 				5551CA322B02757300CC798B /* LoadingOverLayView.swift in Sources */,
+				557D13062B0CE30100165BA5 /* ApiError.swift in Sources */,
+				557D13082B0CE90A00165BA5 /* Client.swift in Sources */,
 				5551CA1E2B024AD400CC798B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +344,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +373,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
